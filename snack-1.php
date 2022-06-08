@@ -29,7 +29,7 @@ $basketGames = [
         ]
     ];
 
-var_dump($basketGames);
+// var_dump($basketGames);
 
 
 ?>
@@ -47,8 +47,13 @@ var_dump($basketGames);
     <ul>
         <?php for($i = 0; $i < count($basketGames); $i++): ?>
 
-        <li><?php echo $basketGames[$i]["home"].' - '.$basketGames[$i]["guests"].' | '.$basketGames[$i]["homePoints"].'-'.$basketGames[$i]["guestPoints"] ?></li>
-        <?php endfor ?> 
+        <li>
+            <?php echo $basketGames[$i]["home"].' - '
+            .$basketGames[$i]["guests"].' | '
+            .$basketGames[$i]["homePoints"].'-'
+            .$basketGames[$i]["guestPoints"] ?>
+        </li>
+        <?php endfor; ?> 
     </ul>
 </body>
 </html>
