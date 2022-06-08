@@ -41,11 +41,13 @@ function averageCalculator($voteArr){
     }
     $averageVote = $sumVote / count($voteArr);
 
-    if(!is_int($averageVote)){
+    // ALTERNATIVA
+/*     if(!is_int($averageVote)){
         return number_format($averageVote, 2, ',', '');
-    }
+    } */
 
-    return $averageVote;
+    // return $averageVote;
+    return round($averageVote, 1);
 }
 
 
